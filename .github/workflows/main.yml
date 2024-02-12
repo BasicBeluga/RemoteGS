@@ -1,0 +1,5 @@
+steps:
+- uses: actions/checkout@master
+  with:
+    name: JGRennison/OpenTTD-patches
+    ref: ref/tags/jgrpp-0.57.1
