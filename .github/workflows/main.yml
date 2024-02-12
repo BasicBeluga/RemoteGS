@@ -1,5 +1,10 @@
-steps:
-- uses: actions/checkout@master
-  with:
-    name: JGRennison/OpenTTD-patches
-    ref: ref/tags/jgrpp-0.57.1
+name: "Build"
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+      with:
+        name: JGRennison/OpenTTD-patches
+        ref: ref/tags/jgrpp-0.57.1
