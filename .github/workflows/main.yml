@@ -1,10 +1,8 @@
-name: "Build"
+name: hello-world
 on: push
 jobs:
-  test:
-    runs-on: ubuntu-18.04
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-      with:
-        name: JGRennison/OpenTTD-patches
-        ref: ref/tags/jgrpp-0.57.1
+      - name: my-step
+        run: echo "Hello World!"
