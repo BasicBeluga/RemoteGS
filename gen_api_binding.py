@@ -23,7 +23,7 @@ os.chdir(openttd_path)
 # 		version = r.group(1)
 # 		break
 
-version = "pro gamer"
+version = os.environ.get("BRANCH")
 
 # -- Print header in output .nut file
 f_out.write("/*\n")

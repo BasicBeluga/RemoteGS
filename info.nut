@@ -1,18 +1,19 @@
 /*
- * This file is part of ServerGS, which is a GameScript for OpenTTD
- * Copyright (C) 2012-2013  Leif Linse
+ * This file is part of RemoteGS, which is a GameScript for OpenTTD
+ * Original ServerGS Copyright (C) 2012-2013  Leif Linse
+ * Forked RemoteGS Copyright (C) 2020-2024 Ian Earle
  *
- * ServerGS is free software; you can redistribute it and/or modify it 
+ * RemoteGS is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by
  * the Free Software Foundation; version 2 of the License
  *
- * ServerGS is distributed in the hope that it will be useful,
+ * RemoteGS is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with ServerGS; If not, see <http://www.gnu.org/licenses/> or
+ * along with RemoteGS; If not, see <http://www.gnu.org/licenses/> or
  * write to the Free Software Foundation, Inc., 51 Franklin Street, 
  * Fifth Floor, Boston, MA 02110-1301 USA.
  *
@@ -21,15 +22,15 @@
 require("version.nut");
 
 class FMainClass extends GSInfo {
-	function GetAuthor()		{ return "Zuu"; }
-	function GetName()			{ return "ServerGS"; }
-	function GetDescription() 	{ return "This GS give admin port clients access to the GS API"; }
+	function GetAuthor()		{ return "Ian Earle"; }
+	function GetName()			{ return "RemoteGS"; }
+	function GetDescription() 	{ return "This GS gives admin port clients access to the GS API"; }
 	function GetVersion()		{ return SELF_VERSION; }
-	function GetDate()			{ return "2013-11-29"; }
+	function GetDate()			{ return SELF_PUBLISH_DATE; }
 	function CreateInstance()	{ return "MainClass"; }
-	function GetShortName()		{ return "SeGS"; }
+	function GetShortName()		{ return "ReGS"; }
 	function GetAPIVersion()	{ return "1.3"; }
-	function GetURL()			{ return "http://www.tt-forums.net/viewtopic.php?f=65&t=68828"; }
+	function GetURL()			{ return "https://github.com/BasicBeluga/RemoteGS"; }
 
 	function GetSettings() {
 		AddSetting({name = "show_error_dialogs",
